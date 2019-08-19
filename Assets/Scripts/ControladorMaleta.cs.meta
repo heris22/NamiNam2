@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0b78a35b7ebc4ef478adf5427dc74f3d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - anim: {fileID: 95620229346264286, guid: f18d19cdb2ceb7f42812d0ced943e35c, type: 2}
+  - audio: {instanceID: 0}
+  - estrellaeffect: {fileID: 1045802927821846, guid: 8ef437dc88002bd4ca35d37e2100ae15,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

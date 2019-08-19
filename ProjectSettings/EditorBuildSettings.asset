@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CargaInicio.unity
+    guid: 7227d012ae9a2cb49a992b04c3a2c508
+  - enabled: 1
+    path: Assets/Scenes/Menuinicio.unity
+    guid: 3e1ede541239c4e4db07f2da402fe3c7
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: ee632512072952c48b5fdf26f42681ce
+  - enabled: 1
+    path: Assets/Scenes/Felicitaciones2.unity
+    guid: c3f8f447c5bc7534997980375dabf1a0
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 54b9b6c1cbaf7d14cb9501c42acea920
+  - enabled: 1
+    path: Assets/Scenes/Felicitaciones.unity
+    guid: 8a769322abcd0c940a9c0b079ffd441a
+  - enabled: 1
+    path: Assets/Scenes/Gameover.unity
+    guid: 8a0a379f12c02284dac61a12135e14ba
+  - enabled: 1
+    path: Assets/Scenes/Cargaconsejo.unity
+    guid: 9bd871a40ca967f438e0ec04e1921a70
+  - enabled: 1
+    path: Assets/Scenes/Gracias.unity
+    guid: 347351c5bb456f340b5f0ba23233dbdf
+  - enabled: 1
+    path: Assets/Scenes/Juego.unity
+    guid: d8b61341cd0748249bf848b0fb6ac5dc
+  - enabled: 1
+    path: Assets/Scenes/Juego2.unity
+    guid: 63aa925932acb6e40b8016e063aa17cb
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/dcaab8f2defd4a94ebd4589f7248a921
+    guid: dcaab8f2defd4a94ebd4589f7248a921
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Video.unity
+    guid: 294532c2a4a8b284ca6a222ba9c9f802

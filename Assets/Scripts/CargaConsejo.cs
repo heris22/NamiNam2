@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CargaConsejo : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class CargaConsejo : MonoBehaviour {
     void Start () {
         bandera = FindObjectOfType<ControladorBandera>();
         StartCoroutine(cargarEscena());
+       
     }
 	
 	// Update is called once per frame
@@ -27,6 +29,14 @@ public class CargaConsejo : MonoBehaviour {
 
     IEnumerator cargarEscena()
     {
+
+        GameObject.Find("ButtonSaltar").GetComponent<Button>().enabled = false;
+        GameObject.Find("ButtonSaltar").GetComponent<Image>().enabled = false;
+        yield return new WaitForSeconds(2f);
+        GameObject.Find("ButtonSaltar").GetComponent<Button>().enabled = true;
+        GameObject.Find("ButtonSaltar").GetComponent<Image>().enabled = true;
+
+
         yield return new WaitForSecondsRealtime(16f);
         SceneManager.LoadScene("Tutorial");
     }

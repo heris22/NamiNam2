@@ -95,12 +95,12 @@ public class GeneradorAlimentos2 : MonoBehaviour {
         }
         if (SceneManager.GetSceneByName("Juego").isLoaded)
         {
-            StartCoroutine(GenerarAlimentos(2f));
+            StartCoroutine(GenerarAlimentos(3f));
 
         }
         if (SceneManager.GetSceneByName("Juego2").isLoaded)
         {
-            StartCoroutine(GenerarAlimentos(2f));
+            StartCoroutine(GenerarAlimentos(3f));
 
         }
 

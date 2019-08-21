@@ -9,13 +9,13 @@ public class ControladorFelicidades : MonoBehaviour {
     public ContadorPuntaje puntaje;
     public Text textpuntaje;
     //public Animator transicion;
-    //public AudioSource audioFelicidades, audioClic;
+    public AudioSource audioFelicidades, audioClic;
     //public Registro registro;
     public ControladorBandera bandera;
 
     public void IrMenu()
     {
-        //audioClic.Play();
+        audioClic.Play();
         puntaje.puntaje = 0;
         bandera.niv1 = false;
         bandera.niv2 = false;
@@ -38,9 +38,9 @@ public class ControladorFelicidades : MonoBehaviour {
             StartCoroutine(Transicion("Gracias"));
         }
 
-        //audioClic.Play();
+        audioClic.Play();
         puntaje.puntaje = 0;
-        // StartCoroutine(Transicion(bandera.tempNombre));
+        //StartCoroutine(Transicion(bandera.tempNombre));
     }
 
 
@@ -52,7 +52,7 @@ public class ControladorFelicidades : MonoBehaviour {
         //registro.ganan++;
         puntaje = FindObjectOfType<ContadorPuntaje>();
         textpuntaje.text = "" + puntaje.puntaje + " ptos";
-        //audioFelicidades.Play();
+        audioFelicidades.Play();
     }
 	
 	// Update is called once per frame

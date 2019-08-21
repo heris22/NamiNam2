@@ -77,7 +77,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.17
+  m_Radius: 2.8
 --- !u!114 &114842955912453094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -93,6 +93,7 @@ MonoBehaviour:
   vidas: {fileID: 0}
   puntaje: {fileID: 0}
   maleta: {fileID: 0}
+  naminimo: {fileID: 0}
   azulR: {fileID: 4537513094652658, guid: 71a695963c5888242a152583b3040192, type: 2}
   rojoC: {fileID: 4582279334893272, guid: 80d88d253e3dd1443874a241acb47701, type: 2}
   amarilloE: {fileID: 4310043038273342, guid: 125a8c0281f1495408a278c817dec943, type: 2}
@@ -101,14 +102,22 @@ MonoBehaviour:
   mousepostion: {x: 0, y: 0}
   deltaX: 0
   deltaY: 0
-  anim: {fileID: 0}
-  anim2: {fileID: 0}
+  animRegu: {fileID: 0}
+  animConst: {fileID: 0}
+  animEner: {fileID: 0}
+  errorR: {fileID: 0}
+  errorC: {fileID: 0}
+  errorE: {fileID: 0}
   manzana: 0
-  poptext: {fileID: 0}
-  audioNamiFeliz: {fileID: 0}
+  huecotextR: {fileID: 0}
+  huecotextC: {fileID: 0}
+  huecotextE: {fileID: 0}
+  errorRe: {fileID: 0}
+  errorCons: {fileID: 0}
+  errorEne: {fileID: 0}
+  audio: {fileID: 0}
   bandera: {fileID: 0}
   explosioneffect: {fileID: 0}
-  estrellaeffect: {fileID: 0}
 --- !u!212 &212632251569900598
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -140,8 +149,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1361005533
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ccbbd7941efce2247b5ec6e5a3dce7a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

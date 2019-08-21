@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class ControladorGameOver : MonoBehaviour {
 
     public ContadorPuntaje puntaje;
-    //public Text textpuntaje;
+    public Text textpuntaje;
     public Animator transicion;
-    //public AudioSource audioPerdistes, audioClic;
+    public AudioSource audioPerdistes, audioClic;
     public ControladorBandera bandera;
     //public Registro registro;
 
@@ -19,13 +19,13 @@ public class ControladorGameOver : MonoBehaviour {
         puntaje.puntaje = 0;
         bandera.niv1 = false;
         bandera.niv2 = false;
-        //bandera.niv3 = false;
+        bandera.niv3 = false;
         StartCoroutine(Transicion("Menuinicio"));
     }
 
     public void IrEscenaJugar()
     {
-        //audioClic.Play();
+        audioClic.Play();
         puntaje.puntaje = 0;
         StartCoroutine(Transicion(bandera.tempNombre));
     }
@@ -37,8 +37,8 @@ public class ControladorGameOver : MonoBehaviour {
         //registro.pierden++;
         bandera = FindObjectOfType<ControladorBandera>();
         puntaje = FindObjectOfType<ContadorPuntaje>();
-        //textpuntaje.text = "" + puntaje.puntaje + " ptos";
-        //audioPerdistes.Play();
+        textpuntaje.text = "" + puntaje.puntaje + " ptos";
+        audioPerdistes.Play();
 
     }
 	

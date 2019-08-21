@@ -12,8 +12,8 @@ public class ControladorVideo : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
+        StartCoroutine(cargarEscena());
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -47,18 +47,18 @@ public class ControladorVideo : MonoBehaviour {
     IEnumerator cargarEscena()
     {
         video.Prepare();
-        GameObject.Find("btnmenu").GetComponent<Button>().enabled = false;
-        GameObject.Find("btnmenu").GetComponent<Image>().enabled = false;
+        GameObject.Find("ButtonHome").GetComponent<Button>().enabled = false;
+        GameObject.Find("ButtonHome").GetComponent<Image>().enabled = false;
 
-        GameObject.Find("btnrepetir").GetComponent<Button>().enabled = false;
-        GameObject.Find("btnrepetir").GetComponent<Image>().enabled = false;
+        GameObject.Find("ButtonRepetir").GetComponent<Button>().enabled = false;
+        GameObject.Find("ButtonRepetir").GetComponent<Image>().enabled = false;
 
-        yield return new WaitForSecondsRealtime(27f);
-        GameObject.Find("btnmenu").GetComponent<Button>().enabled = true;
-        GameObject.Find("btnmenu").GetComponent<Image>().enabled = true;
+        yield return new WaitForSecondsRealtime(26f);
+        GameObject.Find("ButtonHome").GetComponent<Button>().enabled = true;
+        GameObject.Find("ButtonHome").GetComponent<Image>().enabled = true;
 
-        GameObject.Find("btnrepetir").GetComponent<Button>().enabled = true;
-        GameObject.Find("btnrepetir").GetComponent<Image>().enabled = true;
+        GameObject.Find("ButtonRepetir").GetComponent<Button>().enabled = true;
+        GameObject.Find("ButtonRepetir").GetComponent<Image>().enabled = true;
     }
 
 }

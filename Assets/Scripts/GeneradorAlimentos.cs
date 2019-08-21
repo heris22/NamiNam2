@@ -13,6 +13,7 @@ public class GeneradorAlimentos : MonoBehaviour {
     public ControladorTiempo tiempo;
     public bool bandera, regulador, constructor, energetico;
     public int numTemp, numero;
+    public AudioSource reguladorSonido, constructorSonido, energeticoSonido;
 
     private BoxCollider2D col;
     float x1, x2;
@@ -47,18 +48,26 @@ public class GeneradorAlimentos : MonoBehaviour {
             regulador = true;
             constructor = false;
             energetico = false;
+            yield return new WaitForSeconds(2f);
+            reguladorSonido.Play();
         } else if (regulador == true && constructor == false && energetico == false)
         {
             Instantiate(frutas2[Random.Range(0, frutas2.Length)], temp, Quaternion.identity);
             regulador = false;
             constructor = true;
             energetico = false;
-        }else if (regulador == false && constructor == true && energetico == false)
+            yield return new WaitForSeconds(2f);
+            energeticoSonido.Play();
+        }
+        else if (regulador == false && constructor == true && energetico == false)
         {
             Instantiate(frutas3[Random.Range(0, frutas3.Length)], temp, Quaternion.identity);
             regulador = false;
             constructor = false;
             energetico = false;
+            yield return new WaitForSeconds(2f);
+            constructorSonido.Play();
+            
         }
 
         /*while (numTemp != numero)
@@ -95,12 +104,12 @@ public class GeneradorAlimentos : MonoBehaviour {
         }
         if (SceneManager.GetSceneByName("Juego").isLoaded)
         {
-            StartCoroutine(GenerarAlimentos(2f));
+            StartCoroutine(GenerarAlimentos(3f));
 
         }
         if (SceneManager.GetSceneByName("Juego2").isLoaded)
         {
-            StartCoroutine(GenerarAlimentos(1f));
+            StartCoroutine(GenerarAlimentos(2f));
 
         }
 
